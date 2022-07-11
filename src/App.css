@@ -1,38 +1,67 @@
-.App {
+@import url(https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css);
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #e0e3e8;
+  font-family: "Rubik", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #727e8c;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 20px;
+}
+section {
+  width: 900px;
+  margin: auto;
+  background-color: #fff;
+  box-shadow: 0px 5px 10px rgba(90, 116, 148, 0.3);
+  border-radius: 6px;
+  padding: 30px 0;
+}
+.heading {
+  background-color: #1c85e8;
+  padding: 10px;
+  color: #fff;
+  margin-bottom: 50px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+form {
+  padding: 0 50px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+form label {
+  color: #727e8c;
+  font-size: 18px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input {
+  width: 60px;
+  padding: 5px;
+  margin-left: 15px;
+  margin-right: 20px;
+  outline: none;
+  cursor: pointer;
 }
-
-.App-link {
-  color: #61dafb;
+button {
+  padding: 5px 30px;
+  border: none;
+  cursor: pointer;
+  background: #727e8c;
+  color: #fff;
+  transition: 0.5s;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+  background: #1c85e8;
+}
+article {
+  padding: 40px;
 }
